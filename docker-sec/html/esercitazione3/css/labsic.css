@@ -1,0 +1,58 @@
+body {
+	PADDING-LEFT: 5px; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	MARGIN: 4px; COLOR: #333; 
+	/*LINE-HEIGHT: 17px; */
+	FONT-STYLE: normal; 
+	FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif; 
+	TEXT-DECORATION: none;
+	background-color: #EFF5F5; 
+}
+p,li {
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	COLOR: #333; 
+	/*LINE-HEIGHT: 6px; */
+	FONT-STYLE: normal; 
+	FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif; 
+	TEXT-DECORATION: none
+}
+td {
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	COLOR: #333; 
+	/*LINE-HEIGHT: 17px; */
+	FONT-STYLE: normal; 
+	FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif; 
+	TEXT-DECORATION: none
+}
+
+span.titolo {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 12px; 
+	COLOR: #115d5b; 
+	FONT-STYLE: normal; 
+	TEXT-DECORATION: none
+}
+
+xmp {
+	border: thin solid black;
+	FONT-SIZE: 12px; 
+	background-color: #FFFFCC;
+}
+
+h1 {
+	FONT-SIZE: 24px; 
+	margin-top: 10pt;
+}
+
+h2 {
+	FONT-SIZE: 18px; 
+	margin-top: 8pt;
+	FONT-STYLE: italic; 
+}
+
+.warning {
+	FONT-STYLE: italic;
+}
