@@ -45,11 +45,11 @@ echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3
       	</table>
     </div>
     <div class="content-wrapper">
-      	<h1>Esercitazione 4 - One-time-password con S/Key</h1>
+      	<h1>Esercitazione 4 - One-time-password</h1>
       	<div class="objective-description">
         	<h2>Scopo dell'esercitazione</h2>
         	<p>Lo scopo di questa esercitazione &egrave; quello di verificare che lo studente sia in grado di 
-        	utilizzare un sistema con autenticazione one-time-password S/Key.</p>
+        	utilizzare un sistema con autenticazione one-time-password.</p>
       	</div>
 		<div class="detailed-description">
         	<h2>Descrizione</h2>
@@ -58,8 +58,7 @@ echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3
 
         	<ul>
         
-				<li>Lo studente installa il supporto S/Key sulla sua macchina virtuale che funger&agrave; da server. A lezione sono state spiegate alcune possibili soluzioni.</li>
-          
+		  
 				<li>Lo studente compila la form sottostante riempendo tutti i campi. </li>
 				<li><b>IMPORTANTE:</b> l'indirizzo email deve appartenere al dominio <tt>studio.unibo.it</tt>.</li>
 
@@ -67,28 +66,27 @@ echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3
 				conferma contenente uno username e una password generati casualmente.
 				</li>
           
-				<li>Lo studente configura il server per accedere con questi dati usando S/KEY. In particolare:
+				<li>Lo studente configura la macchina virtuali per accedere con questi dati. In particolare:
 					<ul>
-						<li>Aggiunge l'utente alla lista di coloro che possono accedere al server. 
+						<li>Aggiunge l'utente alla lista di coloro che possono accedere alla macchina virtuale. 
 						<i>Nota:</i> l'account puo' essere cancellato dopo aver svolto l'esercizio, eventualmente off-line.</li>
-						<li>Configura il server affinche' questo utente venga autenticato tramite lo schema S/Key.</li>
-						<li>Per quell'utente, inizializza il sistema di autenticazione S/Key utilizzando la password ricevuta nella mail di conferma.</li>
+						<li>Configura la macchina virtuale affinche' questo utente venga autenticato tramite lo schema One-Time Password (OTPW).</li>
+						<li>Per quell'utente, inizializza il sistema di autenticazione OTPW, utilizzando com prefisso la password ricevuta nella mail di conferma.</li>
 					</ul>
 				</li>
           
 				<li>Lo studente avvia il server e si autentica usando i dati ricevuti via mail. In particolare:
             		<ul>
               			<li>Accede al server con un client testuale, e si logga usando lo username ricevuto nella mail di conferma</li>
-              			<li>Ricevera' dal server una challenge</li>
-              			<li>Calcola il relativo response (con MD5), usando la password ricevuta nella mail di conferma.</li>
-              			<li>Usa il response per autenticarsi</li>
+              			<li>Ricevera' dal server una challenge, in OTPW è il numero di password richiesta</li>
+              			<li>Calcola la response da inviare: prefisso seguito da numero di passord richiesto</li>
             		</ul>
           		</li>
           
           		<li>La prova si considera superata se nella relazione finale lo studente riporta correttamente:
             		<ul>
               			<li>una copia della mail ricevuta</li>
-              			<li>i log del server che dimostrano la riuscita autenticazione S/Key
+              			<li>i log del server che dimostrano la riuscita autenticazione OTPW
 	                		<ul>
 	                	  		<li>relativi allo username ottenuto nella mail di conferma</li>
 	                  			<li>comprensiva della challenge fornita dal server (se presente nei log)</li>
@@ -96,6 +94,7 @@ echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3
               			</li>
               			<li>Uno screenshot relativo all'autenticazione challenge-response</li>
               			<li>il response usato per accedere al server</li>
+              			<li>il file ~/.otpw </li>
             		</ul>
           		</li>
         	</ul>

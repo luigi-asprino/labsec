@@ -1,0 +1,365 @@
+<div id="content">
+	<!-- Start content -->
+
+	<div class="contentSpacer"></div>
+	<h2>Consegna dell'attivit&agrave; di laboratorio</h2>
+
+	<p>
+		Il termine per la consegna del report finale &egrave; fissata per il <b>29
+			Maggio 2020, ore 23.59</b>.
+	</p>
+	<h2 id="descrizione-generale">
+		<a name="descrizione-generale" id="descrizione-generale">Descrizione
+			generale</a>
+	</h2>
+
+	<p>Il laboratorio di sicurezza consiste nel completare alcuni
+		esercizi che saranno assegnati durante il corso e produrre, entro la
+		fine del semestre, un report che testimonia il loro svolgimento.</p>
+
+	<p>Caratteristiche generali degli esercizi:</p>
+
+	<ul>
+		<li>richiedono l'uso delle tecnologie spiegate a lezione e di
+			appositi strumenti che saranno indicati di volta in volta.</li>
+
+		<li>richiedono l'utilizzo del <a
+			href="https://w3id.org/lgu/securityLab"><b>Security Lab</b></a>. Una
+			guida per importare la macchina virtuale in virtual box &egrave;
+			disponibile al seguente <a
+			href="https://www.virtualbox.org/manual/UserManual.html#ovf-import-appliance
+    	">indirizzo</a>.
+			La password per accedere alla macchina virtuale &egrave; <tt>securitylab</tt>.
+		</li>
+
+		<li>non richiedono la scrittura di codice.</li>
+
+		<li>in alcuni casi, richiedono l'interazione via mail con il
+			tutor del laboratorio. Al fine di semplificare l'interazione si
+			consiglia di configurare l'agente di posta installato sulla macchina
+			virtuale (Mozilla Thunderbird) per ricevere/inviare mail dall'account
+			<tt>studio.unibo.it</tt>. <b>Attenzione:</b> Nel fare questo
+			configurare il client secondo la configurazione indicata dal CESIA a
+			questo <a href="https://bit.ly/2WypZ6B">indirizzo</a> (non usare la
+			configurazione suggerita da Thunderbird).
+		</li>
+
+		<li>possono essere svolti in remoto e in qualunque momento del
+			corso, entro la data di consegna.</li>
+	</ul>
+
+	<h2 id="report">
+		<a name="report" id="report">Il report finale</a>
+	</h2>
+
+	<p>
+		Il report finale &egrave; un file PDF da spedire via mail entro il <b>29
+			Maggio 2020, ore 23:59</b>. Regole relative alla consegna di laboratorio:
+	</p>
+
+	<ul>
+		<li>il file PDF deve essere spedito da un indirizzo del dominio <tt>studio.unibo.it</tt>
+			all'indirizzo email <a href="mailto:labsicurezza@cs.unibo.it">labsicurezza@cs.unibo.it</a>
+			in una mail con
+
+			<ul>
+				<li>Subject <tt>[Laboratorio Sicurezza 2019/2020: Report]
+						&lt;cognome&gt; &lt;nome&gt; &lt;numero di matricola&gt;</tt></li>
+
+				<li>Body vuoto</li>
+
+				<li>Report allegato come file PDF di nome <tt>&lt;numero_di_matricola&gt;-report-finale.pdf</tt></li>
+			</ul> <b>Non si fanno eccezioni.</b>
+		</li>
+
+		<li><i>Non si possono sostenere prove di laboratorio dopo il
+				termine di consegna del report finale, nonostante l'orale
+				sar&agrave; sostenuto negli appelli estivi, autunnali o invernali</i>.</li>
+
+		<li>Ogni file &egrave; associato ad un solo studente. Non si
+			possono svolgere esercizi in gruppo.</li>
+	</ul>
+
+	<h2 id="valutazione">
+		<a name="valutazione" id="valutazione">Valutazione
+			dell'attivit&agrave; di laboratorio</a>
+	</h2>
+
+	<p>Il voto della prova di laboratorio sar&agrave; determinato dal
+		numero di esercitazioni svolte correttamente. Tale voto vale il 60%
+		del voto complessivo, secondo le regole generali del corso.</p>
+
+	<p>Ogni esercitazione pu&ograve; essere svolta correttamente o
+		meno: non ci sono valutazioni intermedie.</p>
+
+	<p>I risultati possono essere consultati su questa pagina, che
+		sar&agrave; aggiornata man mano che si correggono i report di
+		consegna.</p>
+
+	<p>
+		Dopo la consegna, gli studenti sono quindi invitati a consultare la
+		pagina dei risultati e, in caso di dubbi, contattare il tutor del
+		corso (<a href="mailto:labsicurezza@cs.unibo.it">labsicurezza@cs.unibo.it</a>)
+		con un ragionevole margine rispetto al termine ultimo di consegna.
+	</p>
+
+	<h2 id="esercitazioni">
+		<a name="esercitazioni" id="esercitazioni">Esercitazioni da
+			svolgere durante il corso</a>
+	</h2>
+
+	<h3>1. Crittografia Simmetrica.</h3>
+
+	<p>L'esercizio consiste nello scambio di una chiave segreta con il
+		tutor per iniziare uno scambio di messaggi cifrati. In particolare, lo
+		studente deve:</p>
+
+	<ul>
+		<li>Creare una chiave segreta:</li>
+
+		<li>Scambiare la chiave segreta con il tutor:</li>
+
+		<li>Decifrare il messaggio ricevuto dal tutor e cifrato con
+			algorimto Triple-DES con la chiave segreta.</li>
+
+		<li>Cifrare il messaggio con un algoritmo AES-256 .</li>
+
+		<li>Inviare il messaggio cifrato al tutor</li>
+	</ul>
+
+	<p>Per svolgere l'esercitazione lo studente deve utilizzare il
+		Security Lab, cio&egrave;:</p>
+	<ul>
+
+
+		<li>Collegarsi tramite la macchina virtuale alla pagina <a
+			href="http://localhost/esercitazione1/index.php">http://localhost/esercitazione1/index.php</a>
+			e compilare la form con i seguenti dati:
+
+
+			<ul>
+				<li>le credenziali studio.unibo.it (servono esclusivamente per
+					ottenere l'autorizzazione ad inviare la mail al tutor con il vostro
+					utente);</li>
+				<li>nome e cognome;</li>
+
+				<li>chiave segreta.</li>
+			</ul>
+		</li>
+
+		<li>Decifrare con OpenSSL il messaggio inviato dal tutor per
+			email. Il messaggio &egrave; cifrato con Triple-DES + Salting</li>
+
+		<li>Cifrare con OpenSSL il messaggio appena decifrato. Il
+			messaggio va cifrato dallo studente con AES-256 + Salting</li>
+
+		<li>Inviare il messaggio al tutor utilizzando la form che compare
+			nel passo successivo utilizzando il sistema</li>
+
+
+		<li>Inserire nel report le email ricevute dal sistema comprensive
+			degli header. I binari degli attachment non vanno inseriti nel
+			report. Se nel report non ci sar&agrave; una copia della mail
+			comprensiva di header, l'esercitazione non sar&agrave; considerata
+			superata.</li>
+	</ul>
+
+
+
+	<h3>2. Certificati</h3>
+
+	<p>Scopo di questa esercitazione di verificare che lo studente
+		sappia utilizzare alcune delle funzionalit&agrave; dei certificati. In
+		particolare, l'esercitazione vuole verificare se lo studente in grado
+		di creare un certificato e di scambiare mail cifrate e firmate. Come
+		svolgere l'esercizio:</p>
+
+	<ul>
+		<li>Lo studente crea il proprio certificato <a
+			href="https://extrassl.actalis.it/portal/uapub/freemail?lang=it">
+				Free Secure Email tramite il servizio di Actalis</a> e lo importa sul
+			proprio client di posta.
+
+			<ul>
+				<li>Il certificato deve essere associato all'indirizzo di posta
+					del dominio <tt>studio.unibo.it</tt>.
+				</li>
+
+			</ul>
+		</li>
+
+		<li>Lo studente invia quindi una mail firmata (ma non cifrata)
+			con il proprio certificato al tutor del corso: Luigi Asprino (<tt>luigi.asprino@unibo.it</tt>).
+
+			<ul>
+				<li>Il subject della mail deve essere <tt>[Laboratorio
+						Sicurezza: Esercitazione 2]: Mail firmata da COGNOME NOME
+						MATRICOLA</tt>, dove <tt>COGNOME</tt>, <tt>NOME</tt> e <tt>MATRICOLA</tt>
+					sono rispettivamente il cognome, il nome ed il numero di matricola
+					dello studente.
+				</li>
+
+				<li>Se lo studente utilizza un subject diverso, la mail
+					potrebbe non essere presa in considerazione.</li>
+			</ul>
+		</li>
+
+		<li>Entro i 10 giorni successivi alla data in cui ha ricevuto la
+			mail firmata, il tutor invia allo studente una mail firmata con il
+			proprio certificato <a
+			href="https://extrassl.actalis.it/portal/uapub/freemail?lang=it">
+				Free Secure Email tramite il servizio di Actalis</a> e cifrata per lo
+			studente.
+
+			<ul>
+				<li>Il contenuto di questa mail cambia da studente a studente.
+					E' una sequenza casuale di caratteri.</li>
+
+				<li>La mail inviata dal tutor in risposta alla mail firmata
+					dallo studente. Dunque, il subject contiene (ma non detto che sia
+					identico a) il subject della mail firmata inviata dallo studente
+					(vedi sopra).</li>
+			</ul>
+		</li>
+
+		<li>Lo studente deve quindi essere in grado di decifrare la mail
+			ricevuta dal tutor.</li>
+
+		<li>Lo studente supera la prova se nel report di consegna finale
+			indica il messaggio (decifrato) spedito dal tutor.</li>
+
+	</ul>
+	<p>
+		Una sintesi dell'esercitazione &egrave; disponibile sul Security Lab
+		al seguente indirizzo <a
+			href="http://localhost/esercitazione2/index.php">http://localhost/esercitazione2/index.php</a>
+	<h3>3. GPG</h3>
+
+	<p>Scopo di questa esercitazione &egrave; verificare che lo
+		studente sappia usare alcune delle funzionalit&agrave; di GPG.</p>
+
+	<p>In particolare, l'esercitazione vuole verificare se lo studente
+		riesce a leggere un messaggio cifrato e firmato dal tutor del corso.</p>
+
+	<p>L'esercitazione consiste nel:</p>
+
+	<ul>
+		<li>Creare coppie di chiavi GPG</li>
+
+		<li>L'esercitazione va svolta utilizzando il <b>Security Lab</b></li>
+
+		<li>L'esercitazione &egrave; disponibile all'indirizzo <a
+			href="http://localhost/esercitazione3/index.php">http://localhost/esercitazione3/index.php</a>
+		<li>Caricare la propria chiave pubblica sul sistema</li>
+		<li>Ricevere via mail la chiave pubblica del tutor ed un file di
+			testo firmato e cifrato (con la chiave pubblica appena caricata). Il
+			contenuto del file di testo viene generato casualmente per ogni
+			studente.</li>
+
+		<li>Decifrare il contenuto del file di testo (dopo aver importato
+			le chiavi nel proprio keyring).</li>
+	</ul>
+
+	<p>L'esercitazione &egrave; considerata superata se il report di
+		consegna riporta tale contenuto decifrato.</p>
+
+	<h3>4. OTPW</h3>
+
+	<p>Lo scopo di questa esercitazione &egrave; verificare che lo
+		studente sia in grado di utilizzare un sistema con autenticazione
+		one-time-password OTPW.</p>
+
+	<p>Come svolgere l'esercizio:</p>
+
+	<ul>
+
+		<li>Lo studente si collega a <a
+			href="http://localhost/esercitazione4/index.php">http://localhost/esercitazione4/index.php</a>
+			dalla propria macchina virtuale e compila la form.
+		</li>
+
+		<li>In risposta, lo studente riceve all'indirizzo specificato
+			(del dominio <tt>studio.unibo.it</tt>) una <b>mail di conferma</b>
+			contenente uno username e una passphrase generati casualmente.
+		</li>
+
+		<li>Lo studente configura la macchina virtuale per accedere con
+			questi dati usando OTPW</li>
+
+		<li>Lo studente avvia il server e si autentica usando i dati
+			ricevuti via mail. In particolare:
+
+			<ul style="margin-top: 10px; margin-bottom: 10px">
+				<li>accede al server con un client testuale, e si logga usando
+					lo username ricevuto nella mail di conferma;</li>
+
+				<li>riceve dal server una challenge;</li>
+
+				<li>usa la password one time per autiticarsi per autenticarsi.</li>
+			</ul>
+		</li>
+
+		<li>La prova si considera superata se nella relazione finale lo
+			studente riporta correttamente:
+
+			<ul style="margin-top: 10px; margin-bottom: 10px">
+				<li>una copia del body della mail ricevuta;</li>
+
+				<li>i log del server che dimostrano la riuscita autenticazione
+					OTPW;</li>
+
+				<li>uno screenshot relativo all'autenticazione
+					challenge-response via terminale;</li>
+
+				<li>il response usato per accedere al server.</li>
+			</ul>
+		</li>
+	</ul>
+
+	<h3>5. Firewall</h3>
+
+	<p>Lo scopo di questa esercitazione &egrave; verificare che lo
+		studente sia in grado di configurare e usare firewall packet
+		filtering.</p>
+
+	<p>Descrizione generale:</p>
+
+	<ul>
+		<li>Lo studente si collega a <a
+			href="http://localhost/esercitazione5/index.php">http://localhost/esercitazione5/index.php</a>
+			e compila la form.
+		</li>
+		<li>In risposta, lo studente riceve all'indirizzo specificato
+			(del dominio <tt>studio.unibo.it</tt>) una mail di conferma
+			contenente una coppia di indirizzi IP di macchine del dipartimento
+			(che chiameremo A e B);
+		</li>
+
+		<li>Configura il firewall basato su regole di packet fitering del
+			tool iptables del framework netfilter per far passare le richieste
+			ICMP alla macchina A e bloccare quelle destinate alla macchina B;</li>
+
+		<li>Esegue due richieste ICMP alle due macchine e verifica che il
+			firewall funzioni;</li>
+
+		<li>Inserisce nel report:
+
+			<ul style="margin-top: 10px; margin-bottom: 10px">
+				<li>uno screenshot con <em>con timestamp</em> del packet
+					sniffer wireshark che mostra i pacchetti ICMP spediti;
+				</li>
+
+				<li>i log <em>con timestamp</em> del firewall che riportano sia
+					i pacchetti scartati che quelli accettati;
+				</li>
+
+				<li>le regole di configurazione del firewall.</li>
+
+			</ul>
+		</li>
+
+	</ul>
+
+
+</div>
+<!-- end content -->

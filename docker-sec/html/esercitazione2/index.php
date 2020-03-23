@@ -63,16 +63,15 @@ echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3
         <ul>
         
           <li>Lo studente crea il proprio certificato su 
-          <a href="http://www.instantssl.com/ssl-certificate-products/free-email-certificate.html">Comodo's Free Email certificates</a> 
+          <a href="https://extrassl.actalis.it/portal/uapub/freemail?lang=it">Actalis's Free Email certificates</a> 
           e lo importa sul proprio client di posta.
             <ul>
-              <li>Il certificato deve essere associato all'indirizzo di posta del dominio <tt>studio.unibo.it</tt>.</li>
-              <li>&Egrave; sufficiente un certificato di tipo <i>Freemail</i>.</li>
+              <li><b>Nota:</b> Il certificato deve essere associato all'indirizzo di posta del dominio <tt>studio.unibo.it</tt>.</li>
             </ul>
           </li>
         
-          <li>Lo studente invia quindi una mail firmata con il proprio certificato (ma non cifrata) al tutor del corso: Andrea Nuzzolese 
-          (<tt>andrea.nuzzolese2@unibo.it</tt>).
+          <li>Lo studente invia quindi una mail firmata con il proprio certificato (ma non cifrata) al tutor del corso: Luigi Asprino 
+          (<tt>luigi.asprino@unibo.it</tt>).
             <ul>
               <li>Il subject della mail deve essere 
               <tt>[Laboratorio Sicurezza: Esercitazione 2]: Mail firmata da COGNOME NOME MATRICOLA</tt>, 
@@ -85,7 +84,7 @@ echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3
         
           <li>Entro i 10 giorni successivi alla data in cui ha ricevuto la mail firmata, il tutor invia allo studente 
           una mail firmata con il proprio certificato 
-          <a href="http://www.instantssl.com/ssl-certificate-products/free-email-certificate.html">Comodo's Free Email certificates</a>
+          <a href="https://extrassl.actalis.it/portal/uapub/freemail?lang=it">Actalis's Free Email certificates</a>
           e cifrata per lo studente. 
             <ul>
               <li>Il contenuto di questa mail cambia da studente a studente.</li>
@@ -100,12 +99,7 @@ echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3
           
           <li>Lo studente supera la prova se nel report di consegna finale indica il messaggio in chiaro spedito dal tutor.</li>
           
-          <li>L'uso del Laborotorio Virtuale &egrave; <b>obbligatorio</b> per lo svolgimento dell'esercitazione. Il pacchetto da scaricare è <i>babaoglu-security-lab2</i>.<br/> Prima di installare il pacchetto occorre aggiornare gli indici APT sulla vostra macchina virtuale con i comandi:
-                <ul>
-                    <li>sudo apt-get update</li>
-                    <li>sudo update-apt-xapian-index</li>
-                </ul>
-          </li>
+          
         </ul>
 
       </div>

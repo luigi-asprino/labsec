@@ -228,9 +228,9 @@ function build_confirmation_mail_body($student_info, $tmp_username, $tmp_passwor
   $mail_content .= "    Matricola: " . $student_info['student_number'] . "\r\n";
   $mail_content .= "    Username: " . $student_info['student_username'] . "\r\n";
   $mail_content .= "    E-mail CS: " . $student_info['student_cs_email'] . "\r\n";
-  $mail_content .= "Lo username e la password che dovrai usare per autenticarti nel tuo server sono: \r\n\r\n";
+  $mail_content .= "Lo username e il prefisso che dovrai usare per autenticarti nel tuo server sono: \r\n\r\n";
   $mail_content .= "   Username: " . $tmp_username . "\r\n";
-  $mail_content .= "   Password: " . $tmp_password . "\r\n";
+  $mail_content .= "   Prefisso: " . $tmp_password . "\r\n";
   $mail_content .= "\r\n\r\n";
   $mail_content .= "Saluti";
   
