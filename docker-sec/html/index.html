@@ -280,18 +280,20 @@
 
 		<li>In risposta, lo studente riceve all'indirizzo specificato
 			(del dominio <tt>studio.unibo.it</tt>) una <b>mail di conferma</b>
-			contenente uno username e una passphrase generati casualmente.
+			contenente uno username e una password generati casualmente.
 		</li>
 
 		<li>Lo studente configura la macchina virtuale per accedere con
-			questi dati usando OTPW</li>
+			questi dati usando SSH e OTPW. In particolare aggiunge l'utente
+			specificato nell'email, e per tale utente genera le one-time password
+			usando come prefisso la password inviata via mail</li>
 
 		<li>Lo studente avvia il server e si autentica usando i dati
 			ricevuti via mail. In particolare:
 
 			<ul style="margin-top: 10px; margin-bottom: 10px">
-				<li>accede al server con un client testuale, e si logga usando
-					lo username ricevuto nella mail di conferma;</li>
+				<li>accede al server con un client testuale (SSH), e si logga
+					usando lo username ricevuto nella mail di conferma;</li>
 
 				<li>riceve dal server una challenge;</li>
 
@@ -319,8 +321,8 @@
 	<h3>5. Firewall</h3>
 
 	<p>Lo scopo di questa esercitazione &egrave; verificare che lo
-		studente sia in grado di configurare e usare firewall packet
-		filtering.</p>
+		studente sia in grado di configurare e usare un firewall basato su
+		regole di packet filtering.</p>
 
 	<p>Descrizione generale:</p>
 
