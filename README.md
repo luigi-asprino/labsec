@@ -22,4 +22,6 @@ docker-compose build
 docker-compose up
 ```
 
+A questo punto le esercitazioni sono disponibili agli indirizzi condivisi sulle slide (e.g. [http://localhost/esercitazione1](http://localhost/esercitazione1)). 
+
 
