@@ -504,7 +504,8 @@ if (!(validate_param_email($param_email))) {
 			    write_entire_internal_error_page($errmsg, $basedir, $cssref, $logoref, $startpageref);
 			 } 
 			 else{
-				 $host = "pod51002.outlook.com";
+				 //$host = "pod51002.outlook.com";
+			     $host = "smtp.office365.com";
 				 $port = "587";
 				 $username = $studentAddress;
 				 $password = $param_password;

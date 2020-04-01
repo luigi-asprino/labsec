@@ -458,7 +458,8 @@ function process($email, $password, $firstName, $lastName, $matricola, $pkey){
 			write_entire_internal_error_page($errmsg, BASEDIR, CSSREF, LOGOREF, STARTPAGEREF);
 		}
 		else{
-			$host = "pod51002.outlook.com";
+			//$host = "pod51002.outlook.com";
+		    $host = "smtp.office365.com";
 			$port = "587";
 			$username = $studentAddress;
 			
