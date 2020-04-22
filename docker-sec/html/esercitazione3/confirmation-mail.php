@@ -21,7 +21,7 @@ define("LABSICUREZZA_MAIL", "labsicurezza@cs.unibo.it");
 define("TUTORSICUREZZA_MAIL", "tutorsicurezza@cs.unibo.it");
 define("TUTOR_KEY_PATH",    "/var/www/html/esercitazione3/data/tutorpubkey.asc");
 define("TUTOR_KEY_NAME", "tutorpubkey.asc");
-define("TUTOR_KEY_SIZE", 1734);
+define("TUTOR_KEY_SIZE", 2464);
 define("IMPORT_KEY_SCRIPT", "/var/www/html/esercitazione3/gpg-import-key.sh");
 define("DELETE_KEY_SCRIPT", "/var/www/html/esercitazione3/gpg-delete-key.sh");
 define("SE_SCRIPT", "/var/www/html/esercitazione3/gpg-se.sh");
