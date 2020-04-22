@@ -380,7 +380,8 @@ if (($msg = validate_param_firstname($param_firstname)) !== TRUE) {
   } 
   else {
   	
-  	  $host = "pod51002.outlook.com";
+  	  //$host = "pod51002.outlook.com";
+      $host = "smtp.office365.com";
 	  $port = "587";
 	  $username = $from;
 	  $password = $param_password;

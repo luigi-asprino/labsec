@@ -687,7 +687,8 @@ if (($msg = validate_param_firstname($param_firstname)) !== TRUE) {
   $verification_mail_body = build_verification_mail_body($student_info, $random_msg);
       
   
-	$host = "pod51002.outlook.com";
+	//$host = "pod51002.outlook.com";
+    $host = "smtp.office365.com";
 	$port = "587";
 	$username = $from;
 	$password = $param_password;

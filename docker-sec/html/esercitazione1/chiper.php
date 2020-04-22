@@ -10,7 +10,7 @@ define("CSSREF",        "./esercitazione1/css/labsic.css");
 define("WP_CACHE_BASE", "cache/");
 define("LOGOREF",       "./esercitazione1/img/logo.gif");
 define("STARTPAGEREF",  "./esercitazione1/index.php");
-define("DEBUG", TRUE);
+define("DEBUG", FALSE);
 
 /*
  * UTILITY FUNCTIONS

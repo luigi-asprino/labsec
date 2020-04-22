@@ -387,7 +387,8 @@ if (($msg = validate_param_firstname($param_firstname)) !== TRUE) {
     $errmsg = "Errore inaspettato durante la costruizione del corpo della mail";
     write_internal_error_page(BASE_REF, CSS_REF, LOGO_REF, $errmsg);
   } else {
-  $host = "pod51002.outlook.com";
+  //$host = "pod51002.outlook.com";
+      $host = "smtp.office365.com";
 	  $port = "587";
 	  $username = $from;
 	  $password = $param_password;
